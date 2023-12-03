@@ -11,7 +11,8 @@ public class Daftar {
         System.out.println("-----------------------------");
         System.out.println("SIGN UP");
         System.out.println("-----------------------------");
-        System.out.println("(Ketikkan 'x' untuk kembali)");
+        System.out.println("(Ketikkan 'exit' untuk kembali)");
+        System.out.println("-----------------------------");
         System.out.print("Username : " );
         user = SeoulbankApp.input();
         cancel(user);
