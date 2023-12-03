@@ -4,17 +4,20 @@ import java.util.Objects;
 public class Admin extends Daftar{
     public static void viewMenuPage(String user) {
         System.out.println("-----------------------------");
+        System.out.println("-----------------------------");
         System.out.println("SELAMAT DATANG DI SEOUL BANK " + user.toUpperCase(Locale.ROOT));
         if(user!="admin"){
-            System.out.println("Saldo Anda : "+SeoulbankApp.cekSaldo(user));
+            System.out.println("Berikut ini status saldo Anda : "+SeoulbankApp.cekSaldo(user));
         }
         System.out.println("-----------------------------");
+        System.out.println("-----------------------------");
+
         if (user == "admin") {
             Admin.listMenu();
         } else {
             User.listMenu();
         }
-        System.out.print("Masukkan Pilihanmu : ");
+        System.out.print("Selamat datang, Masuk dan pilih : ");
         String pilih = SeoulbankApp.input();
         if (user.equals("admin")) {
             Admin.proses(pilih);
@@ -24,9 +27,9 @@ public class Admin extends Daftar{
     }
 
     public static void listMenu() {
-        System.out.println("1. Lihat Seluruh Transaksi");
-        System.out.println("2. Lihat Transaksi Per User");
-        System.out.println("3. Keluar");
+        System.out.println("1. Lihat Riwayat Seluruh Transaksi");
+        System.out.println("2. Lihat Riwayat Transaksi User Tertentu");
+        System.out.println("3. Exit");
     }
 
     public static void proses(String pilih) {
