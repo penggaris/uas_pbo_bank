@@ -3,7 +3,7 @@ import java.util.Objects;
 public class Daftar {
 
     /**
-     *
+     *daftar
      */
     public static String user;
     public static String pass;
