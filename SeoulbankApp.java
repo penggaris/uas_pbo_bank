@@ -13,7 +13,7 @@ public class SeoulbankApp {
         while (!scanner.hasNextInt()) {
             System.out.println("Error! Silahkan masukkan angka yang sesuai.");
             scanner.next();
-            return "x";
+            return "exit";
         }
         var input = scanner.nextLine();
         return input;
